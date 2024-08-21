@@ -4,8 +4,10 @@ function App() {
   return (
       <div className="App">
         <header className="App-header">
-          <h1>Hello, React!</h1>
-          <p>This is my first React app.</p>
+          <h1>Quiz App</h1>
+          <p>This is done by GBP.</p>
+          <button className="App-button">Login</button>
+          <button className="App-button">Register</button>
         </header>
       </div>
   );
