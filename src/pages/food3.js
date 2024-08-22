@@ -45,7 +45,7 @@ const Food3 = () => {
 
     const goToNextQuestion = () => {
         setShowPopup(false);
-        navigate('/food4');
+        navigate('/summary');
     };
 
     const handleClickOutside = (event) => {
@@ -126,4 +126,4 @@ const Food3 = () => {
     );
 };
 
-export default Food3;
+export default Food3; 

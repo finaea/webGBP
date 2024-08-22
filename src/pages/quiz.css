@@ -123,3 +123,31 @@
     border-color: red !important;
     border-width: 15px;
 }
+
+.summary-table {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.summary-row {
+    display: contents;
+}
+
+.question-number {
+    font-size: 16px;
+    padding: 10px;
+    justify-content: left;
+}
+
+.result-icon {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 10px;
+}
+
+.next-button {
+    margin-top: 20px;
+}

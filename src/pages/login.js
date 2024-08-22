@@ -35,7 +35,7 @@ const Login = () => {
         <span className="forgot-password">
         <a href="/forgotPassword">Forgot Password?</a>
         </span>
-        <input className="login-button" type="submit" value="Log In" />
+        <input className="login-button" type="submit" value="Log In" onClick={() => navigate('/choice')}/>
       </form>
     </div>
   );

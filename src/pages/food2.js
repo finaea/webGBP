@@ -102,7 +102,7 @@ const Food2 = () => {
                                     The correct answer is <b>{correctAnswer}</b>. <br /> <br />
                                 </div>
                             )}
-                            The traditional way Malays eat their meals is using <b>the fingers of the right hand</b>. This method is commonly used for dishes like rice and curry, allowing for a more authentic and personal dining experience.
+                            The traditional way Malays eat their meals is using <b>the fingers of the right hand</b>. This method is commonly used for dishes like rice and curry, allowing for a more authentic and personal dining experience. Use the right hand only, the left hand is reserved for a different use. For everyday meals it is acceptable to use fork and spoon. The Chinese use chopsticks. You never see a knife on a dining table: "We prefer to do our butchering in the kitchen!"
                         </div>
                         <button className="next-button" onClick={goToNextQuestion}>Next</button>
                     </div>
