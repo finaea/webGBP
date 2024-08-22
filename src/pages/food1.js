@@ -34,13 +34,13 @@ const Food1 = () => {
 
         setTimeout(() => {
             setShowPopup(true);
-            setShowNextButton(false); // Hide Next button when popup is shown
+            setShowNextButton(false);
         }, 500);
     };
 
     const closePopup = () => {
         setShowPopup(false);
-        setShowNextButton(true); // Show Next button when popup is closed
+        setShowNextButton(true);
     };
 
     const goToNextQuestion = () => {
