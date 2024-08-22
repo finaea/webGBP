@@ -1,5 +1,5 @@
 import React from 'react';
-import './login.css';
+import '../styles/login.css';
 import { useNavigate } from 'react-router-dom';
 import IconButton from '@mui/material/IconButton';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
@@ -33,7 +33,7 @@ const Login = () => {
           placeholder="Password"
         />
         <span className="forgot-password">
-        <a href="/forgotPassword">Forgot Password?</a>
+        <a href="/src/pages/forgotpassword">Forgot Password?</a>
         </span>
         <input className="login-button" type="submit" value="Log In" onClick={() => navigate('/menu')}/>
       </form>

@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import './quiz.css';
+import '../styles/quiz.css';
 import { useNavigate } from 'react-router-dom';
 import IconButton from '@mui/material/IconButton';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';

@@ -4,6 +4,7 @@ import ProfileIcon from '@mui/icons-material/AccountCircle';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import EditNoteIcon from '@mui/icons-material/EditNote';
 import { useNavigate } from 'react-router-dom';
+import '../styles/common.css';
 
 function Profile() {
     const [open, setOpen] = useState(false);

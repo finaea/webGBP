@@ -10,10 +10,11 @@ import { useNavigate } from 'react-router-dom';
 function Menu() {
 
     const buttonStyles = {
+        transform: 'scale(1.5)',
         borderRadius: '20px',             // Border radius
             transition: 'transform 0.3s',     // Smooth transition for the enlargement effect
             '&:hover': {
-            transform: 'scale(1.1)',        // Enlarge the button when hovered
+            transform: 'scale(1.6)',        // Enlarge the button when hovered
         },
     }
 
@@ -25,7 +26,7 @@ function Menu() {
 
     return (
         <div className="container">
-            <Stack spacing={2}>
+            <Stack spacing={5}>
                 <div style={{ width: '100%', textAlign: 'center'}} >
                     <QuizIcon style={{ fontSize: 100, color: '#ffffff'}}  />
                 </div>

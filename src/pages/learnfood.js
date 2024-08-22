@@ -1,5 +1,5 @@
 import React from 'react'
-import './learnfood.css';
+import '../styles/learnfood.css';
 import { useNavigate } from 'react-router-dom';
 import IconButton from '@mui/material/IconButton';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
