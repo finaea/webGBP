@@ -1,25 +1,26 @@
 import React from 'react';
 import './App.css';
 
-import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
-import Page1 from "./pages/page1";
-import Page2 from "./pages/page2";
-import Page3 from "./pages/page3";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Menu from "./pages/Menu";
+import Profile from "./pages/Profile";
+import Error from "./pages/Error";
+import {Container} from "@mui/material";
 
 function App() {
     return (
-        <div className="App">
+        <Container>
             <BrowserRouter>
                 <Routes>
                     <Route path="/">
-                        <Route path="" element={<Page1/>}/>
-                        <Route path="home" element={<Page1/>}/>
-                        <Route path="contact" element={<Page2/>}/>
-                        <Route path="*" element={<Page3/>}/>
+                        <Route path="" element={<Menu/>}/>
+                        <Route path="menu" element={<Menu/>}/>
+                        <Route path="profile" element={<Profile/>}/>
+                        <Route path="*" element={<Error/>}/>
                     </Route>
                 </Routes>
             </BrowserRouter>
-        </div>
+        </Container>
     );
 }
 
