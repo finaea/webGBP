@@ -11,6 +11,7 @@ import Topics from "./pages/topics.js";
 import Clothes from "./pages/clothes.js";
 import Food1 from "./pages/food1.js";
 import Food2 from "./pages/food2.js";
+import Food3 from "./pages/food3.js";
 
 function App() {
     return (
@@ -27,6 +28,7 @@ function App() {
                         <Route path="verification" element={<Verification/>}/>
                         <Route path="food1" element={<Food1/>}/>
                         <Route path="food2" element={<Food2/>}/>
+                        <Route path="food3" element={<Food3/>}/>
                     </Route>
                 </Routes>
             </BrowserRouter>
