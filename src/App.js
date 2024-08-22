@@ -1,7 +1,6 @@
 import React from 'react';
-import './App.css';
 
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {BrowserRouter, Routes, Route, Navigate, useNavigate, useLocation} from "react-router-dom";
 import Home from "./pages/home.js";
 import Login from "./pages/login.js";
 import ForgotPassword from "./pages/forgotpassword.js"
@@ -20,12 +19,37 @@ import LearnClothes from "./pages/learnclothes.js";
 import Menu from "./pages/menu.js";
 import Profile from "./pages/profile.js";
 import Error from "./pages/error.js";
-import {Container} from "@mui/material";
+import {Button, Container} from "@mui/material";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+
+function BackButton() {
+    const navigate = useNavigate();
+    const handleBack = () => {
+        navigate(-1);
+    };
+
+    return (
+        <Button
+            onClick={handleBack}
+            variant="contained"
+            sx={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                padding: '8px 16px',
+            }}
+        >
+            <ArrowBackIcon style={{ color: '#ffffff' }} />
+        </Button>
+    );
+}
 
 function App() {
+    const location = useLocation();
+    const showBackButton = !['/home', '/menu'].includes(location.pathname);
     return (
         <Container>
-            <BrowserRouter>
+            {showBackButton && <BackButton />}
                 <Routes>
                     <Route path="/">
                         <Route path="" element={<Home/>}/>
@@ -49,7 +73,6 @@ function App() {
                         <Route path="*" element={<Error/>}/>
                     </Route>
                 </Routes>
-            </BrowserRouter>
         </Container>
     );
 }

@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/quiz.css';
 import { useNavigate } from 'react-router-dom';
-import IconButton from '@mui/material/IconButton';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import CheckIcon from '@mui/icons-material/Check';
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -34,11 +32,6 @@ const Summary = () => {
                 <div className="points">Points: {points} XP</div>
             </div>
 
-            <div className="back-button">
-                <IconButton onClick={handleBackButtonClick}>
-                    <ArrowBackIcon />
-                </IconButton>
-            </div>
             <div className="heading">Quiz Summary</div>
 
             <div className="summary">

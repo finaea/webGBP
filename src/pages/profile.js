@@ -80,26 +80,8 @@ function Profile() {
         },
     };
 
-    const navigate = useNavigate();
-    const handleBack = () => {
-        navigate(-1);
-    };
-
     return (
         <div className="container">
-            <Button
-                onClick={handleBack}
-                variant="contained"
-                sx={{
-                    position: 'absolute',
-                    top: 0, // Adjust as needed
-                    left: 0,
-                    padding: '8px 16px',
-                }}
-            >
-                <ArrowBackIcon style={{ color: '#ffffff' }} />
-            </Button>
-
             <Stack spacing={2}>
                 <div style={{ width: '100%', textAlign: 'center' }}>
                     <ProfileIcon style={{ fontSize: 100, color: '#ffffff' }} />
