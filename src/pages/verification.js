@@ -25,7 +25,7 @@ const Login = () => {
           id="verification"
           placeholder="Enter verification code"
         />
-        <input className="login-button" type="submit" value="Submit" />
+        <input className="login-button" type="submit" value="Submit" onClick={() => navigate('/menu')}/>
       </form>
     </div>
   );

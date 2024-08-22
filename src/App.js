@@ -18,6 +18,9 @@ import LearnTopics from "./pages/learntopics.js";
 import LearnPlaces from "./pages/learnplaces.js";
 import LearnFood from "./pages/learnfood.js";
 import LearnClothes from "./pages/learnclothes.js";
+import Menu from "./pages/Menu.js";
+import Profile from "./pages/Profile.js";
+import Error from "./pages/Error.js";
 
 function App() {
     return (
@@ -41,6 +44,9 @@ function App() {
                         <Route path="learnplaces" element={<LearnPlaces/>}/>
                         <Route path="learnfood" element={<LearnFood/>}/>
                         <Route path="learnclothes" element={<LearnClothes/>}/>
+                        <Route path="menu" element={<Menu/>}/>
+                        <Route path="profile" element={<Profile/>}/>
+                        <Route path="*" element={<Error/>}/>
                     </Route>
                 </Routes>
             </BrowserRouter>
