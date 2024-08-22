@@ -1,0 +1,10 @@
+.container {
+    box-shadow: #6C946F 0px 30px 30px -20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vh;
+}
