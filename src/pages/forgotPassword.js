@@ -10,7 +10,7 @@ const Login = () => {
   return (
     <div className="container">
       <div className="back-button">
-      <IconButton aria-label="delete" onClick={() => navigate('/login')}>
+      <IconButton onClick={() => navigate('/login')}>
         <ArrowBackIcon />
       </IconButton>           
       </div>
