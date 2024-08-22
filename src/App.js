@@ -46,7 +46,7 @@ function BackButton() {
 
 function App() {
     const location = useLocation();
-    const showBackButton = !['/home', '/menu'].includes(location.pathname);
+    const showBackButton = !['/', '/home', '/menu'].includes(location.pathname);
     return (
         <Container>
             {showBackButton && <BackButton />}
