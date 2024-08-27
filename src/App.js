@@ -16,9 +16,15 @@ import Food7 from "./pages/food7.js";
 import Food8 from "./pages/food8.js";
 import Food9 from "./pages/food9.js";
 import Food10 from "./pages/food10.js";
+import Penang1 from "./pages/penang1.js";
+import Penang2 from "./pages/penang2";
+import Penang3 from "./pages/penang3";
+import Penang4 from "./pages/penang4";
+import Penang5 from "./pages/penang5";
 import Summary from "./pages/summary.js";
 import Choice from "./pages/choice.js";
 import QuizTopics from "./pages/quiztopics.js";
+import QuizPlaces from "./pages/quizplaces.js";
 import LearnTopics from "./pages/learntopics.js";
 import LearnPlaces from "./pages/learnplaces.js";
 import LearnFood from "./pages/learnfood.js";
@@ -80,10 +86,16 @@ function App() {
                         <Route path="food8" element={<Food8/>}/>
                         <Route path="food9" element={<Food9/>}/>
                         <Route path="food10" element={<Food10/>}/>
+                        <Route path="penang1" element={<Penang1/>}/>
+                        <Route path="penang2" element={<Penang2 />} />
+                        <Route path="penang3" element={<Penang3 />} />
+                        <Route path="penang4" element={<Penang4 />} />
+                        <Route path="penang5" element={<Penang5 />} />
                         <Route path="summary" element={<Summary/>}/>
                         <Route path="learntopics" element={<LearnTopics/>}/>
                         <Route path="quiztopics" element={<QuizTopics/>}/>
                         <Route path="learnplaces" element={<LearnPlaces/>}/>
+                        <Route path="quizplaces" element={<QuizPlaces/>}/>
                         <Route path="learnfood" element={<LearnFood/>}/>
                         <Route path="learnclothes" element={<LearnClothes/>}/>
                         <Route path="*" element={<Error/>}/>

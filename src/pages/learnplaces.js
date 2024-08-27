@@ -7,7 +7,7 @@ const LearnPlaces = () => {
 
     return (
         <div className="container">
-          <div className="heading">Choose One Place To Learn About</div>
+          <div className="heading">Choose a state to learn about</div>
           <form action="" className="form">
             <input className="button" onClick={() => navigate('/learnpenang')} type="submit" value="Penang" />
           </form>
