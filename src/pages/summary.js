@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import CheckIcon from '@mui/icons-material/Check';
 import CloseIcon from '@mui/icons-material/Close';
 
-const totalQuestions = 3;
+const totalQuestions = 10;
 
 const Summary = () => {
     const navigate = useNavigate();

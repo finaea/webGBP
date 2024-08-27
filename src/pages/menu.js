@@ -53,6 +53,7 @@ function Menu() {
                     startIcon={<LeaderboardIcon style={{color: '#FFC107'}}/>}
                     color="primary"
                     sx={buttonStyles}
+                    onClick={() => handleClick('/leaderboard')}
                 >
                     Leaderboard
                 </Button>

@@ -4,14 +4,14 @@ import { useNavigate } from 'react-router-dom';
 import IconButton from '@mui/material/IconButton';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
-const Food3 = () => {
+const Food10 = () => {
     const navigate = useNavigate();
     const [points, setPoints] = useState(0);
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [showPopup, setShowPopup] = useState(false);
     const [popupBorderColor, setPopupBorderColor] = useState('');
     const [showNextButton, setShowNextButton] = useState(false);
-    const correctAnswer = "Rambutan";
+    const correctAnswer = "Laksa";
     const popupContentRef = useRef(null);
 
     const handleBackButtonClick = () => {
@@ -45,7 +45,7 @@ const Food3 = () => {
 
     const goToNextQuestion = () => {
         setShowPopup(false);
-        navigate('/food4');
+        navigate('/summary'); // Update this to navigate to the summary page
     };
 
     const handleClickOutside = (event) => {
@@ -64,7 +64,7 @@ const Food3 = () => {
     return (
         <div className="container">
             <div className="top-right-info">
-                <div className="question-number">Question 3 out of 10</div>
+                <div className="question-number">Question 10 out of 10</div>
                 <div className="points">Points: {points} XP</div>
             </div>
 
@@ -74,15 +74,15 @@ const Food3 = () => {
                 </IconButton>
             </div>
             <div className="heading">Food Quiz</div>
-            <div className="question">What fruit is this?</div>
+            <div className="question">Which Malaysian dish is a spicy noodle soup with a coconut milk base?</div>
             <img
-                src={require('../resources/rambutan.jpg')}
-                alt="Rambutan"
+                src={require('../resources/laksa.jpg')}
+                alt="Laksa"
                 className="quiz-image"
             />
             <form action="" className="form">
                 {showPopup ? null : (
-                    ["Durian", "Lychee", "Rambutan", "Dragon Fruit"].map((answer, index) => (
+                    ["Laksa", "Mee Goreng", "Hokkien Mee", "Tom Yam"].map((answer, index) => (
                         <input
                             key={index}
                             className={`answer ${selectedAnswer === answer ? (answer === correctAnswer ? 'correct' : 'wrong') : ''}`}
@@ -99,8 +99,8 @@ const Food3 = () => {
                 <div className="popup">
                     <div className={`popup-content ${popupBorderColor === 'green' ? 'correct-border' : (popupBorderColor === 'red' ? 'wrong-border' : '')}`} ref={popupContentRef}>
                         <img
-                            src={require('../resources/rambutan.jpg')}
-                            alt="Rambutan"
+                            src={require('../resources/laksa.jpg')}
+                            alt="Laksa"
                             className="popup-image"
                         />
                         <div className="popup-text">
@@ -112,18 +112,18 @@ const Food3 = () => {
                                     The correct answer is <b>{correctAnswer}</b>. <br /> <br />
                                 </div>
                             )}
-                            <b>{correctAnswer}</b> is a tropical fruit known for its hairy skin and sweet, juicy flesh. It is native to Southeast Asia and is commonly enjoyed fresh or in various desserts.
+                            <b>{correctAnswer}</b> is a popular Malaysian dish known for its rich, spicy, and creamy coconut milk-based broth.
                         </div>
-                        <button className="next-button" onClick={goToNextQuestion}>Next</button>
+                        <button className="next-button" onClick={goToNextQuestion}>Finish</button>
                     </div>
                 </div>
             )}
 
             {showNextButton && !showPopup && (
-                <button className="next-button" onClick={goToNextQuestion}>Next</button>
+                <button className="next-button" onClick={goToNextQuestion}>Finish</button>
             )}
         </div>
     );
 };
 
-export default Food3; 
+export default Food10;

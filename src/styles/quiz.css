@@ -151,3 +151,41 @@
 .next-button {
     margin-top: 20px;
 }
+
+.quiz-page-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #311354;
+}
+
+.state-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.state-button {
+    background: linear-gradient(45deg, #311354 0%, #422a65 100%);
+    color: white;
+    padding: 15px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 45%; 
+    max-width: 200px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.state-button:hover {
+    transform: scale(1.05);
+}
+
+.state-button:active {
+    transform: scale(0.95);
+}
