@@ -4,12 +4,7 @@ import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase
 
 // Your Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCJ5kux1fi5LeZUNFxx-dIPYY9yRVMjLjA",
-    authDomain: "fir-gbp-7c208.firebaseapp.com",
-    projectId: "fir-gbp-7c208",
-    storageBucket: "fir-gbp-7c208.appspot.com",
-    messagingSenderId: "537776033061",
-    appId: "1:537776033061:web:52076f9366e20a33a4decc"
+
 };
 
 // Initialize Firebase
