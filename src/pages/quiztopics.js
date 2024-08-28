@@ -12,10 +12,10 @@ const QuizTopics = () => {
             <input className="button" onClick={() => navigate('/quizplaces')} type="submit" value="Places" />
           </form>
           <form action="" className="form">
-            <input className="button" onClick={() => navigate('/food1')} type="submit" value="Food" />
+            <input className="button" onClick={() => navigate('/quiz/food')} type="submit" value="Food" />
           </form>
           <form action="" className="form">
-            <input className="button" onClick={() => navigate('/clothes1')} type="submit" value="Clothes" />
+            <input className="button" onClick={() => navigate('/quiz/clothes')} type="submit" value="Clothes" />
           </form>
         </div>
       );

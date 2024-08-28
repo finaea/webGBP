@@ -1,59 +1,41 @@
-import React, { useState, useEffect } from 'react';
-import '../styles/quiz.css';
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
+import '../styles/quiz.css';  // Ensure correct path to your CSS file
 import CheckIcon from '@mui/icons-material/Check';
 import CloseIcon from '@mui/icons-material/Close';
 
-const totalQuestions = 10;
-
 const Summary = () => {
     const navigate = useNavigate();
-    const [points, setPoints] = useState(0);
-    const [selectedAnswers, setSelectedAnswers] = useState({}); 
+    const location = useLocation();
+    const { selectedAnswers, points, totalQuestions } = location.state;  // Retrieve passed state
+
+    // Calculate the number of correct answers
+    const correctAnswersCount = Object.values(selectedAnswers).filter(answer => answer.isCorrect).length;
 
     const handleBackButtonClick = () => {
-        const confirmLeave = window.confirm(
-            'Are you sure you want to leave during the quiz? Your progress will not be saved.'
-        );
-        if (confirmLeave) {
-            navigate('/login'); 
-        }
+        navigate('/quiztopics');  // Adjust this to go back to the start or wherever you want
     };
-
-    const goToNextQuestion = () => {
-        navigate('/quiztopics'); 
-    };
-
-    const correctAnswersCount = Object.values(selectedAnswers).filter(answer => answer.isCorrect).length;
 
     return (
         <div className="container">
             <div className="top-right-info">
                 <div className="points">Points: {points} XP</div>
             </div>
-
             <div className="heading">Quiz Summary</div>
-
             <div className="summary">
-                <div className="summary-header">
-                    <h2>Summary</h2>
-                    <div>{correctAnswersCount} out of {totalQuestions} correct</div>
-                </div>
+                <h2>Summary</h2>
+                <div>{correctAnswersCount} out of {totalQuestions} correct</div>
                 <div className="summary-table">
-                    {Array.from({ length: totalQuestions }, (_, index) => (
+                    {Object.entries(selectedAnswers).map(([questionNumber, answerDetail], index) => (
                         <div key={index} className="summary-row">
-                            <div className="question-number">Question {index + 1}</div>
+                            <div className="question-number">Question {questionNumber}</div>
                             <div className="result-icon">
-                                {selectedAnswers[`Question ${index + 1}`]?.isCorrect ? (
-                                    <CheckIcon color="success" />
-                                ) : (
-                                    <CloseIcon color="error" />
-                                )}
+                                {answerDetail.isCorrect ? <CheckIcon color="success" /> : <CloseIcon color="error" />}
                             </div>
                         </div>
                     ))}
                 </div>
-                <button className="next-button" onClick={goToNextQuestion}>Next</button>
+                <button className="next-button" onClick={handleBackButtonClick}>Next</button>
             </div>
         </div>
     );

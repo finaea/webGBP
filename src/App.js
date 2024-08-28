@@ -1,5 +1,4 @@
 import React from 'react';
-
 import {BrowserRouter, Routes, Route, Navigate, useNavigate, useLocation} from "react-router-dom";
 import Home from "./pages/home.js";
 import Login from "./pages/login.js";
@@ -53,6 +52,7 @@ import Error from "./pages/error.js";
 import {Button, Container} from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import Leaderboard from "./pages/leaderboard.js";
+import QuizPage from "./pages/quiz/quizpage.js";
 
 function BackButton() {
     const navigate = useNavigate();
@@ -135,6 +135,9 @@ function App() {
                         <Route path="learnclothes" element={<LearnClothes/>}/>
                         <Route path="*" element={<Error/>}/>
                         <Route path="leaderboard" element={<Leaderboard/>}/>
+                        <Route path="quizpage" element={<QuizPage/>}/>
+                        <Route path="/quiz/food" element={<QuizPage topic="food" />} />
+                        <Route path="/quiz/clothes" element={<QuizPage topic="clothes" />} />
                     </Route>
                 </Routes>
         </Container>

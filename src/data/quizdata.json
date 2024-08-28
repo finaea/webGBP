@@ -1,0 +1,111 @@
+{
+  "food": [
+    {
+      "question": "What is this dish?",
+      "image": "nasi_lemak.jpg",
+      "answer_choices": ["Fish and Chips", "Nasi Lemak", "Fried Rice", "Nasi Kerabu"],
+      "correct_answer": "Nasi Lemak",
+      "description": "Nasi Lemak is a popular Malaysian dish made with rice cooked in coconut milk, served with sambal, boiled eggs, peanuts, and more."
+    },
+    {
+      "question": "What is the traditional way of eating a Malay meal?",
+      "image": "malay_meal.jpg",
+      "answer_choices": ["With chopsticks", "With spoon and fork", "With knife and fork", "With the fingers of the right hand"],
+      "correct_answer": "With the fingers of the right hand",
+      "description": "The traditional way Malays eat their meals is using the fingers of the right hand. This method is commonly used for dishes like rice and curry, allowing for a more authentic and personal dining experience. Use the right hand only, the left hand is reserved for a different use. For everyday meals it is acceptable to use fork and spoon. The Chinese use chopsticks. You never see a knife on a dining table: 'We prefer to do our butchering in the kitchen!'"
+    },
+    {
+      "question": "What fruit is this?",
+      "image": "rambutan.jpg",
+      "answer_choices": ["Durian", "Lychee", "Rambutan", "Dragon Fruit"],
+      "correct_answer": "Rambutan",
+      "description": "This is a rambutan. It is a tropical fruit known for its hairy skin and sweet, juicy flesh. It is native to Southeast Asia and is commonly enjoyed fresh or in various desserts."
+    },
+    {
+      "question": "What is the main ingredient in the dish 'Nasi Lemak'?",
+      "image": "nasi_lemak.jpg",
+      "answer_choices": ["Soy sauce", "Fish sauce", "Chili paste", "Coconut milk"],
+      "correct_answer": "Coconut milk",
+      "description": "Coconut milk is the star ingredient in Nasi Lemak, giving the rice its creamy texture and rich flavor. This dish is often considered Malaysia's national dish and is loved for its aromatic combination of herbs and spices."
+    },
+    {
+      "question": "Which dish is known as a traditional Malay grilled fish?",
+      "image": "ikan_bakar.jpg",
+      "answer_choices": ["Ikan Bakar", "Ayam Goreng", "Sambal Udang", "Kari Ayam"],
+      "correct_answer": "Ikan Bakar",
+      "description": "Ikan Bakar refers to grilled fish, a beloved method in Malay cooking where fish is marinated in spices and then grilled over charcoal. It's often served with a spicy sambal sauce."
+    },
+    {
+      "question": "What type of noodles is used in 'Char Kuey Teow'?",
+      "image": "char_kuey_teow.jpg",
+      "answer_choices": ["Vermicelli", "Egg noodles", "Flat rice noodles", "Glass noodles"],
+      "correct_answer": "Flat rice noodles",
+      "description": "Char Kuey Teow is famously made with flat rice noodles, stir-fried in a fiery wok with shrimp, eggs, bean sprouts, and chives, often seasoned with light and dark soy sauce."
+    },
+    {
+      "question": "Which of these is a traditional Malaysian breakfast dish?",
+      "image": "roti_canai.jpg",
+      "answer_choices": ["Roti Canai", "Nasi Lemak", "Nasi Kerabu", "Mee Rebus"],
+      "correct_answer": "Roti Canai",
+      "description": "Roti Canai is a type of Indian-influenced flatbread found in Malaysia. It's known for its flaky texture and is commonly served with dhal (lentil curry) or other types of curry for a hearty breakfast."
+    },
+    {
+      "question": "What is the key ingredient in 'Asam Pedas'?",
+      "image": "asam_pedas.jpg",
+      "answer_choices": ["Coconut milk", "Soy sauce", "Tamarind", "Palm sugar"],
+      "correct_answer": "Tamarind",
+      "description": "'Asam Pedas' which translates to 'sour spicy,' is a classic Malay dish known for its tangy flavor profile, primarily derived from tamarind which is used extensively in this dish."
+    },
+    {
+      "question": "Which dish is made from fermented vegetables and is a popular side dish in Malaysia?",
+      "image": "acar.jpg",
+      "answer_choices": ["Kimchi", "Acar", "Pickles", "Sambal"],
+      "correct_answer": "Acar",
+      "description": "Acar is a type of pickled vegetable dish which includes cucumbers, carrots, and sometimes cabbage, spiced with turmeric, chili, and other aromatics, commonly served as a condiment."
+    },
+    {
+      "question": "Which Malaysian dish is a spicy noodle soup with a coconut milk base?",
+      "image": "laksa.jpg",
+      "answer_choices": ["Laksa", "Mee Goreng", "Hokkien Mee", "Tom Yam"],
+      "correct_answer": "Laksa",
+      "description": "Laksa is a spicy noodle soup that combines Chinese and Malay elements; its rich, spicy broth is made creamy with coconut milk, and it's typically filled with noodles, fish, prawns, and cockles."
+    }
+  ],
+  "clothes": [
+    {
+      "question": "What is the traditional attire for Malay women in Malaysia?",
+      "image": "baju_kurung.jpg",
+      "answer_choices": ["Cheongsam", "Sari", "Baju Kurung", "Hanbok"],
+      "correct_answer": "Baju Kurung",
+      "description": "Baju Kurung is the traditional attire for Malay women in Malaysia. It consists of a knee-length blouse worn over a long skirt. This outfit is widely worn for both formal and casual occasions, reflecting modesty and elegance."
+    },
+    {
+      "question": "What is the traditional Indian attire that is popular among Malaysian Indian communities?",
+      "image": "sari.jpg",
+      "answer_choices": ["Kimono", "Sari", "Kebaya", "Sherwani"],
+      "correct_answer": "Sari",
+      "description": "The Sari is a traditional Indian garment that is popular among Malaysian Indian communities. It is a long piece of cloth, typically around 5 to 9 yards, that is draped elegantly around the body. The Sari is worn in various styles, often paired with a blouse and petticoat."
+    },
+    {
+      "question": "The 'Sampin' is a traditional garment worn by men in Malaysia. Who typically wears it?",
+      "image": "sampin.jpg",
+      "answer_choices": ["Malay men during formal occasions", "Indian men during festivals", "Chinese men during New Year", "All men during sports events"],
+      "correct_answer": "Malay men during formal occasions",
+      "description": "The Sampin is a traditional garment, usually made of songket or batik, worn by Malay men around the waist. It is often worn during formal occasions, such as weddings and religious ceremonies, as part of the traditional Baju Melayu attire."
+    },
+    {
+      "question": "What is the common fabric choice for making a Cheongsam in Malaysia?",
+      "image": "cheongsam.jpg",
+      "answer_choices": ["Velvet", "Linen", "Silk", "Denim"],
+      "correct_answer": "Silk",
+      "description": "Silk is the common fabric choice for making a Cheongsam, a traditional Chinese dress that is also popular in Malaysia. The dress is known for its high collar, tight fit, and side slits, often adorned with intricate embroidery or floral patterns."
+    },
+    {
+      "question": "Which part of the Baju Melayu is a folded and stitched cloth worn around the waist?",
+      "image": "baju_melayu.jpg",
+      "answer_choices": ["Sampin", "Sash", "Belt", "Turban"],
+      "correct_answer": "Sampin",
+      "description": "The Sampin is a key part of the Baju Melayu, a traditional Malay outfit for men. It is a folded and stitched cloth, often made of songket or batik, worn around the waist over the sarong or pants, adding a formal and traditional touch to the attire."
+    }
+  ]
+}
