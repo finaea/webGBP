@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Stack, TextField, IconButton, Dialog, DialogActions, DialogContent, DialogTitle, Typography } from '@mui/material';
 import EditNoteIcon from '@mui/icons-material/EditNote';
-import { useNavigate } from 'react-router-dom';
-import { getAuth, updatePassword, verifyBeforeUpdateEmail, sendEmailVerification, reauthenticateWithCredential, EmailAuthProvider, sendPasswordResetEmail } from 'firebase/auth';
+import { getAuth, updatePassword, verifyBeforeUpdateEmail, reauthenticateWithCredential, EmailAuthProvider, sendPasswordResetEmail } from 'firebase/auth';
 import { getFirestore, doc, updateDoc, getDoc } from 'firebase/firestore';
 import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import withAuth from '../utils/withAuth';
@@ -26,7 +25,6 @@ function Profile() {
     const [email, setEmail] = useState('');
     const [points, setPoints] = useState(0);
 
-    const navigate = useNavigate();
     const auth = getAuth();
     const db = getFirestore();
     const storage = getStorage();
@@ -97,9 +95,7 @@ function Profile() {
 
     const handleSaveEmail = async () => {
 
-        const prevEmail = user.email
-
-        if (user.email != email) {
+        if (user.email !== email) {
             try {
                 // Update email in Firebase Authentication
                 await verifyBeforeUpdateEmail(user, email);

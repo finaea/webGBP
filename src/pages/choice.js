@@ -2,7 +2,6 @@ import React from 'react'
 import '../styles/login.css';
 import { useNavigate } from 'react-router-dom';
 import withAuth from '../utils/withAuth'
-import menu from './menu';
 
 const Choice = () => {
     const navigate = useNavigate();
