@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import '../styles/login.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -9,13 +9,13 @@ const QuizTopics = () => {
         <div className="container">
           <div className="heading">Choose Your Quiz Topic</div>
           <form action="" className="form">
-            <input className="button" onClick={() => navigate('/quizplace')} type="submit" value="Places" />
+            <input className="button" onClick={() => navigate('/quiz/places')} type="submit" value="Places" />
           </form>
           <form action="" className="form">
-            <input className="button" onClick={() => navigate('/food1')} type="submit" value="Food" />
+            <input className="button" onClick={() => navigate('/quiz/food')} type="submit" value="Food" />
           </form>
           <form action="" className="form">
-            <input className="button" onClick={() => navigate('/quizclothes')} type="submit" value="Clothes" />
+            <input className="button" onClick={() => navigate('/quiz/clothes')} type="submit" value="Clothes" />
           </form>
         </div>
       );

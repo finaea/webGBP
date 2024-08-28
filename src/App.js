@@ -6,21 +6,21 @@ import Login from "./pages/login.js";
 import ForgotPassword from "./pages/forgotpassword.js"
 import Register from "./pages/register.js";
 import Verification from "./pages/verification.js";
-import Food1 from "./pages/food1.js";
-import Food2 from "./pages/food2.js";
-import Food3 from "./pages/food3.js";
 import Summary from "./pages/summary.js";
 import Choice from "./pages/choice.js";
 import QuizTopics from "./pages/quiztopics.js";
+import QuizPlaces from "./pages/quizplaces.js";
 import LearnTopics from "./pages/learntopics.js";
-import LearnPlaces from "./pages/learnplaces.js";
-import LearnFood from "./pages/learnfood.js";
-import LearnClothes from "./pages/learnclothes.js";
+import LearnPlaces from "./pages/learn/learnplaces.js";
 import Menu from "./pages/menu.js";
 import Profile from "./pages/profile.js";
 import Error from "./pages/error.js";
 import {Button, Container} from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import Leaderboard from "./pages/leaderboard.js";
+import QuizPage from "./pages/quiz/quizpage.js";
+import LearnPage from './pages/learn/learnpage.js';
+import RewardsPage from './pages/rewards.js';
 
 function BackButton() {
     const navigate = useNavigate();
@@ -46,7 +46,7 @@ function BackButton() {
 
 function App() {
     const location = useLocation();
-    const showBackButton = !['/', '/home', '/menu'].includes(location.pathname);
+    const showBackButton = !['/', '/home', '/menu', '/quiz/food', '/quiz/clothes', '/quiz/places/penang', '/quiz/places/perlis', '/quiz/places/sarawak'].includes(location.pathname);
     return (
         <Container>
             {showBackButton && <BackButton />}
@@ -61,16 +61,21 @@ function App() {
                         <Route path="menu" element={<Menu/>}/>
                         <Route path="profile" element={<Profile/>}/>
                         <Route path="choice" element={<Choice/>}/>
-                        <Route path="food1" element={<Food1/>}/>
-                        <Route path="food2" element={<Food2/>}/>
-                        <Route path="food3" element={<Food3/>}/>
                         <Route path="summary" element={<Summary/>}/>
-                        <Route path="learntopics" element={<LearnTopics/>}/>
-                        <Route path="quiztopics" element={<QuizTopics/>}/>
+                        <Route path="learn" element={<LearnTopics/>}/>
+                        <Route path="quiz" element={<QuizTopics/>}/>
                         <Route path="learnplaces" element={<LearnPlaces/>}/>
-                        <Route path="learnfood" element={<LearnFood/>}/>
-                        <Route path="learnclothes" element={<LearnClothes/>}/>
+                        <Route path="quiz/places" element={<QuizPlaces/>}/>
                         <Route path="*" element={<Error/>}/>
+                        <Route path="leaderboard" element={<Leaderboard/>}/>
+                        <Route path="quizpage" element={<QuizPage/>}/>
+                        <Route path="/quiz/food" element={<QuizPage topic="food" />} />
+                        <Route path="/quiz/clothes" element={<QuizPage topic="clothes" />} />
+                        <Route path="/quiz/places/penang" element={<QuizPage topic="penang" />} />
+                        <Route path="/quiz/places/perlis" element={<QuizPage topic="perlis" />} />
+                        <Route path="/quiz/places/sarawak" element={<QuizPage topic="sarawak" />} />
+                        <Route path="/learn/:topic" element={<LearnPage />} />
+                        <Route path="/rewards" element={<RewardsPage />} />
                     </Route>
                 </Routes>
         </Container>

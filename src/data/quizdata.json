@@ -1,0 +1,222 @@
+{
+  "food": [
+    {
+      "question": "What is this dish?",
+      "image": "nasi_lemak.jpg",
+      "answer_choices": ["Fish and Chips", "Nasi Lemak", "Fried Rice", "Nasi Kerabu"],
+      "correct_answer": "Nasi Lemak",
+      "description": "Nasi Lemak is a popular Malaysian dish made with rice cooked in coconut milk, served with sambal, boiled eggs, peanuts, and more."
+    },
+    {
+      "question": "What is the traditional way of eating a Malay meal?",
+      "image": "malay_meal.jpg",
+      "answer_choices": ["With chopsticks", "With spoon and fork", "With knife and fork", "With the fingers of the right hand"],
+      "correct_answer": "With the fingers of the right hand",
+      "description": "The traditional way Malays eat their meals is using the fingers of the right hand. This method is commonly used for dishes like rice and curry, allowing for a more authentic and personal dining experience. Use the right hand only, the left hand is reserved for a different use. For everyday meals it is acceptable to use fork and spoon. The Chinese use chopsticks. You never see a knife on a dining table: 'We prefer to do our butchering in the kitchen!'"
+    },
+    {
+      "question": "What fruit is this?",
+      "image": "rambutan.jpg",
+      "answer_choices": ["Durian", "Lychee", "Rambutan", "Dragon Fruit"],
+      "correct_answer": "Rambutan",
+      "description": "This is a rambutan. It is a tropical fruit known for its hairy skin and sweet, juicy flesh. It is native to Southeast Asia and is commonly enjoyed fresh or in various desserts."
+    },
+    {
+      "question": "What is the main ingredient in the dish 'Nasi Lemak'?",
+      "image": "nasi_lemak.jpg",
+      "answer_choices": ["Soy sauce", "Fish sauce", "Chili paste", "Coconut milk"],
+      "correct_answer": "Coconut milk",
+      "description": "Coconut milk is the main ingredient in Nasi Lemak, a traditional Malaysian dish. The rice is cooked in coconut milk, giving it a rich, creamy flavor that is essential to this iconic meal."
+    },
+    {
+      "question": "Which dish is known as a traditional Malay grilled fish?",
+      "image": "ikan_bakar.jpg",
+      "answer_choices": ["Ikan Bakar", "Ayam Goreng", "Sambal Udang", "Kari Ayam"],
+      "correct_answer": "Ikan Bakar",
+      "description": "Ikan Bakar is a traditional Malay dish of grilled fish, typically marinated with a mixture of spices and then wrapped in banana leaves before being grilled. It is a popular dish throughout Malaysia, known for its smoky, spicy flavors."
+    },
+    {
+      "question": "What type of noodles is used in 'Char Kuey Teow'?",
+      "image": "char_kuey_teow.jpg",
+      "answer_choices": ["Vermicelli", "Egg noodles", "Flat rice noodles", "Glass noodles"],
+      "correct_answer": "Flat rice noodles",
+      "description": "Char Kuey Teow is made using flat rice noodles, which are stir-fried with a mixture of soy sauce, shrimp, eggs, Chinese sausage, and other ingredients. This dish is a beloved street food in Malaysia, known for its smoky flavor from being cooked over high heat."
+    },
+    {
+      "question": "Which of these is a traditional Malaysian breakfast dish?",
+      "image": "roti_canai.jpg",
+      "answer_choices": ["Roti Canai", "Nasi Lemak", "Nasi Kerabu", "Mee Rebus"],
+      "correct_answer": "Roti Canai",
+      "description": "Roti Canai is a traditional Malaysian breakfast dish made from flatbread that is crispy on the outside and soft on the inside. It is usually served with dhal (lentil curry) or other types of curry."
+    },
+    {
+      "question": "What is the key ingredient in 'Asam Pedas'?",
+      "image": "asam_pedas.jpg",
+      "answer_choices": ["Coconut milk", "Soy sauce", "Tamarind", "Palm sugar"],
+      "correct_answer": "Tamarind",
+      "description": "Tamarind is the key ingredient in Asam Pedas, a popular Malaysian dish known for its sour and spicy flavor. The tamarind gives the dish its distinctive tangy taste, which is balanced with spices and usually served with fish."
+    },
+    {
+      "question": "Which dish is made from fermented vegetables and is a popular side dish in Malaysia?",
+      "image": "acar.jpg",
+      "answer_choices": ["Kimchi", "Acar", "Pickles", "Sambal"],
+      "correct_answer": "Acar",
+      "description": "Acar is a traditional Malaysian side dish made from fermented vegetables, typically including cucumbers, carrots, and cabbage. It is flavored with vinegar, spices, and occasionally peanuts, offering a tangy, crunchy complement to main dishes."
+    },
+    {
+      "question": "Which Malaysian dish is a spicy noodle soup with a coconut milk base?",
+      "image": "laksa.jpg",
+      "answer_choices": ["Laksa", "Mee Goreng", "Hokkien Mee", "Tom Yam"],
+      "correct_answer": "Laksa",
+      "description": "Laksa is a spicy noodle soup that is one of Malaysia's most famous dishes. The broth is made with a coconut milk base, which provides a creamy texture and balances the spiciness of the dish. It is often garnished with ingredients like prawns, chicken, and tofu."
+    }
+  ],
+  "clothes": [
+    {
+      "question": "What is the traditional attire for Malay women in Malaysia?",
+      "image": "baju_kurung.jpg",
+      "answer_choices": ["Cheongsam", "Sari", "Baju Kurung", "Hanbok"],
+      "correct_answer": "Baju Kurung",
+      "description": "Baju Kurung is the traditional attire for Malay women in Malaysia. It consists of a knee-length blouse worn over a long skirt. This outfit is widely worn for both formal and casual occasions, reflecting modesty and elegance."
+    },
+    {
+      "question": "What is the traditional Indian attire that is popular among Malaysian Indian communities?",
+      "image": "sari.jpg",
+      "answer_choices": ["Kimono", "Sari", "Kebaya", "Sherwani"],
+      "correct_answer": "Sari",
+      "description": "The Sari is a traditional Indian garment that is popular among Malaysian Indian communities. It is a long piece of cloth, typically around 5 to 9 yards, that is draped elegantly around the body. The Sari is worn in various styles, often paired with a blouse and petticoat."
+    },
+    {
+      "question": "The 'Sampin' is a traditional garment worn by men in Malaysia. Who typically wears it?",
+      "image": "sampin.jpg",
+      "answer_choices": ["Malay men during formal occasions", "Indian men during festivals", "Chinese men during New Year", "All men during sports events"],
+      "correct_answer": "Malay men during formal occasions",
+      "description": "The Sampin is a traditional garment, usually made of songket or batik, worn by Malay men around the waist. It is often worn during formal occasions, such as weddings and religious ceremonies, as part of the traditional Baju Melayu attire."
+    },
+    {
+      "question": "What is the common fabric choice for making a Cheongsam in Malaysia?",
+      "image": "cheongsam.jpg",
+      "answer_choices": ["Velvet", "Linen", "Silk", "Denim"],
+      "correct_answer": "Silk",
+      "description": "Silk is the common fabric choice for making a Cheongsam, a traditional Chinese dress that is also popular in Malaysia. The dress is known for its high collar, tight fit, and side slits, often adorned with intricate embroidery or floral patterns."
+    },
+    {
+      "question": "Which part of the Baju Melayu is a folded and stitched cloth worn around the waist?",
+      "image": "baju_melayu.jpg",
+      "answer_choices": ["Sampin", "Sash", "Belt", "Turban"],
+      "correct_answer": "Sampin",
+      "description": "The Sampin is a key part of the Baju Melayu, a traditional Malay outfit for men. It is a folded and stitched cloth, often made of songket or batik, worn around the waist over the sarong or pants, adding a formal and traditional touch to the attire."
+    }
+  ],
+  "penang": [
+    {
+      "question": "What is Penang also known as?",
+      "image": "penang.jpg",
+      "answer_choices": ["Pearl of the Orient", "Lion City", "Garden City", "Land Below the Wind"],
+      "correct_answer": "Pearl of the Orient",
+      "description": "Penang is often referred to as the 'Pearl of the Orient' due to its natural beauty, rich history, and cultural diversity. It is a popular tourist destination known for its heritage sites, cuisine, and vibrant arts scene."
+    },
+    {
+      "question": "Which iconic historical building in Penang was built by Captain Francis Light?",
+      "image": "fort_cornwallis.jpg",
+      "answer_choices": ["Penang State Museum", "Khoo Kongsi", "Cheong Fatt Tze Mansion", "Fort Cornwallis"],
+      "correct_answer": "Fort Cornwallis",
+      "description": "Fort Cornwallis, built by Captain Francis Light in the late 18th century, is one of the most well-preserved historical sites in Penang. It served as a defensive fort and is now a popular tourist attraction."
+    },
+    {
+      "question": "Penang Hill was a colonial hill station established by the British. What is its local name?",
+      "image": "penang_hill.jpg",
+      "answer_choices": ["Bukit Bintang", "Bukit Bendera", "Bukit Cina", "Bukit Jalil"],
+      "correct_answer": "Bukit Bendera",
+      "description": "Penang Hill, also known as Bukit Bendera, was a popular hill station during the British colonial period. It offers panoramic views of the island and features a funicular railway, nature trails, and historical buildings."
+    },
+    {
+      "question": "What is Penang Bridge known for?",
+      "image": "penang_bridge.jpg",
+      "answer_choices": ["Having a glass-bottomed section", "Being the oldest bridge in Malaysia", "Being one of the longest bridges in Southeast Asia", "Connecting Malaysia to Singapore"],
+      "correct_answer": "Being one of the longest bridges in Southeast Asia",
+      "description": "Penang Bridge is one of the longest bridges in Southeast Asia, spanning 13.5 kilometers. It connects the island of Penang to the mainland, playing a crucial role in transportation and economic development."
+    },
+    {
+      "question": "Kek Lok Si Temple is one of the largest Buddhist temples in Southeast Asia. What feature is most iconic at this temple?",
+      "image": "kek_lok_si.jpg",
+      "answer_choices": ["The Pagoda of Ten Thousand Buddhas", "The Golden Buddha statue", "The Dragon Boat Pond", "The Reclining Buddha"],
+      "correct_answer": "The Pagoda of Ten Thousand Buddhas",
+      "description": "Kek Lok Si Temple's most iconic feature is the Pagoda of Ten Thousand Buddhas, a seven-tiered structure combining Chinese, Thai, and Burmese architectural styles. The temple is a major pilgrimage site and tourist attraction in Penang."
+    }
+  ],
+  "perlis": [
+    {
+      "question": "What flag is this?",
+      "image": "flag_perlis.jpg",
+      "answer_choices": ["Ukraine", "Perlis", "Buryatia", "Rwanda"],
+      "correct_answer": "Perlis",
+      "description": "The Perlis state flag consists of two horizontal bands of yellow and blue, representing the royalty and people of Perlis. It is a symbol of the state's sovereignty and heritage."
+    },
+    {
+      "question": "Which traditional dish from Perlis is known for its spicy and tangy flavor?",
+      "image": "laksa_perlis.jpg",
+      "answer_choices": ["Laksa Perlis", "Nasi Dagang", "Sambal Perlis", "Perlis Satay"],
+      "correct_answer": "Laksa Perlis",
+      "description": "Laksa Perlis is a traditional dish from Perlis known for its unique blend of spicy and tangy flavors. It is made with rice noodles served in a spicy and sour fish-based broth, garnished with herbs and vegetables."
+    },
+    {
+      "question": "Which institution in Perlis is renowned for its research in agricultural science?",
+      "image": "agriculture.jpg",
+      "answer_choices": ["University Malaysia Perlis (UniMAP)", "Perlis Agricultural Institute", "Perlis Science Foundation", "Institute of Sustainable Agrotechnology (INSAT)"],
+      "correct_answer": "Perlis Agricultural Institute",
+      "description": "The Perlis Agricultural Institute is renowned for its research and development in agricultural science. It plays a significant role in advancing agricultural practices and technologies in the region."
+    },
+    {
+      "question": "Which historical landmark in Perlis is known for its archaeological significance?",
+      "image": "gua_kelam.jpg",
+      "answer_choices": ["Gua Kelam", "Kota Kayang Museum", "Perlis Craft Cultural Complex", "Alwi Mosque"],
+      "correct_answer": "Gua Kelam",
+      "description": "Gua Kelam, or the Cave of Darkness, is a limestone cave in Perlis known for its archaeological significance. It features a walkway through the cave, offering visitors a unique experience of exploring ancient geological formations."
+    },
+    {
+      "question": "What body of water borders Perlis to the west?",
+      "image": "sea.jpg",
+      "answer_choices": ["Strait of Malacca", "Andaman Sea", "South China Sea", "Gulf of Thailand"],
+      "correct_answer": "Andaman Sea",
+      "description": "Perlis is bordered to the west by the Andaman Sea, which is part of the eastern Indian Ocean. This body of water plays a crucial role in the maritime activities and climate of the region."
+    }
+  ],
+  "sarawak": [
+    {
+      "question": "What is the capital city of Sarawak known for its riverside setting and vibrant markets?",
+      "image": "kuching.jpg",
+      "answer_choices": ["Miri", "Sibu", "Kuching", "Bintulu"],
+      "correct_answer": "Kuching",
+      "description": "Kuching, the capital city of Sarawak, is renowned for its riverside setting and vibrant markets, making it a cultural and economic hub of the region."
+    },
+    {
+      "question": "Which festival is celebrated with boat races on the Sarawak River?",
+      "image": "regatta.jpg",
+      "answer_choices": ["Sarawak Regatta", "Kuching Water Festival", "Miri Boat Race", "Bintulu Dragon Boat Festival"],
+      "correct_answer": "Sarawak Regatta",
+      "description": "The Sarawak Regatta is an annual event that features boat races on the Sarawak River, celebrating the state's rich cultural heritage and attracting participants from all over."
+    },
+    {
+      "question": "What type of rock predominates in the geological landscape of Mulu National Park?",
+      "image": "mulu.jpg",
+      "answer_choices": ["Granite", "Sandstone", "Limestone", "Shale"],
+      "correct_answer": "Limestone",
+      "description": "Limestone is the predominant rock type in Mulu National Park, creating the stunning karst landscapes and extensive cave systems the park is famous for."
+    },
+    {
+      "question": "The world’s largest flower can be found in Sarawak. What is the name of the flower?",
+      "image": "rafflesia.jpg",
+      "answer_choices": ["Orchid", "Hibiscus", "Rafflesia", "Lotus"],
+      "correct_answer": "Rafflesia",
+      "description": "Rafflesia, the world's largest flower, can be found in the rainforests of Sarawak. Known for its enormous size and strong odor, it is a rare and unique species."
+    },
+    {
+      "question": "What is the historic fort in Kuching that was once a stronghold against pirates?",
+      "image": "margherita.jpg",
+      "answer_choices": ["Fort Margherita", "Fort Sylvisa", "Fort Hamina", "Fort Brooke"],
+      "correct_answer": "Fort Margherita",
+      "description": "Fort Margherita, located in Kuching, was built as a defense against pirates and remains an important historical landmark in Sarawak."
+    }
+  ]
+}

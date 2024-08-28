@@ -5,7 +5,7 @@
     background: linear-gradient(45deg, #311354 0%, #422a65 100%);
     color: white;
     padding-block: 20px;
-    margin: 20px auto;
+    margin: 10px auto;
     border-radius: 20px;
     border: none;
     transition: all 0.2s ease-in-out;
@@ -35,7 +35,7 @@
     border-radius: 20px;
     text-align: center;
     position: relative;
-    overflow-y: auto; /*for scrolling*/
+    overflow-y: auto;
     border: 5px solid transparent;
 }
 
@@ -150,4 +150,42 @@
 
 .next-button {
     margin-top: 20px;
+}
+
+.quiz-page-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.heading2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #311354;
+}
+
+.state-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.state-button {
+    background: linear-gradient(45deg, #311354 0%, #422a65 100%);
+    color: white;
+    padding: 15px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 45%; 
+    max-width: 200px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.state-button:hover {
+    transform: scale(1.05);
+}
+
+.state-button:active {
+    transform: scale(0.95);
 }

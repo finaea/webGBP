@@ -6,6 +6,7 @@ import ProfileIcon from '@mui/icons-material/AccountCircle';
 import LeaderboardIcon from '@mui/icons-material/Leaderboard';
 import LogoutIcon from '@mui/icons-material/Logout';
 import QuizIcon from '@mui/icons-material/Quiz';
+import RewardsIcon from '@mui/icons-material/CardGiftcard';  // Importing a suitable icon for rewards
 import { useNavigate } from 'react-router-dom';
 import { getAuth, signOut } from 'firebase/auth';
 import withAuth from '../utils/withAuth'; // Import the HOC
@@ -66,8 +67,18 @@ function Menu() {
                     startIcon={<LeaderboardIcon style={{ color: '#FFC107' }} />}
                     color="primary"
                     sx={buttonStyles}
+                    onClick={() => handleClick('/leaderboard')}
                 >
                     Leaderboard
+                </Button>
+                <Button
+                    variant="contained"
+                    startIcon={<RewardsIcon style={{color: '#FF5722'}}/>}  // Rewards button
+                    color="primary"
+                    sx={buttonStyles}
+                    onClick={() => handleClick('/rewards')}
+                >
+                    Rewards
                 </Button>
                 <Button
                     variant="contained"
