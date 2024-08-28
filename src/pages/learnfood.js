@@ -1,10 +1,7 @@
 import React from 'react'
 import '../styles/learnfood.css';
-import { useNavigate } from 'react-router-dom';
 
 const LearnFood = () => {
-    const navigate = useNavigate();
-
     return (
         <div className="container">
           <div className="heading">Food Found Around Malaysia</div>
