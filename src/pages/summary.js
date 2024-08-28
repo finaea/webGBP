@@ -20,7 +20,7 @@ const Summary = () => {
             <div className="top-right-info">
                 <div className="points">Points: {points} XP</div>
             </div>
-            <div className="heading2">Quiz Summary</div>
+            <div className="heading">Quiz Summary</div>
             <div className="summary">
                 <h2>Summary</h2>
                 <div>{correctAnswersCount} out of {totalQuestions} correct</div>
