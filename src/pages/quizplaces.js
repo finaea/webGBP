@@ -9,13 +9,13 @@ const QuizPlaces = () => {
         <div className="container">
           <div className="heading">Choose a state</div>
           <form action="" className="form">
-            <input className="button" onClick={() => navigate('/penang1')} type="submit" value="Penang" />
+            <input className="button" onClick={() => navigate('/quiz/places/penang')} type="submit" value="Penang" />
           </form>
           <form action="" className="form">
-            <input className="button" onClick={() => navigate('/perlis1')} type="submit" value="Perlis" />
+            <input className="button" onClick={() => navigate('/quiz/places/perlis')} type="submit" value="Perlis" />
           </form>
           <form action="" className="form">
-            <input className="button" onClick={() => navigate('/sarawak1')} type="submit" value="Sarawak" />
+            <input className="button" onClick={() => navigate('/quiz/places/sarawak')} type="submit" value="Sarawak" />
           </form>
         </div>
       );

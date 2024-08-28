@@ -9,7 +9,7 @@ const QuizTopics = () => {
         <div className="container">
           <div className="heading">Choose Your Quiz Topic</div>
           <form action="" className="form">
-            <input className="button" onClick={() => navigate('/quizplaces')} type="submit" value="Places" />
+            <input className="button" onClick={() => navigate('/quiz/places')} type="submit" value="Places" />
           </form>
           <form action="" className="form">
             <input className="button" onClick={() => navigate('/quiz/food')} type="submit" value="Food" />

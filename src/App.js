@@ -130,7 +130,7 @@ function App() {
                         <Route path="learnpenang" element={<LearnPenang/>}/>
                         <Route path="learnperlis" element={<LearnPerlis/>}/>
                         <Route path="learnsarawak" element={<LearnSarawak/>}/>
-                        <Route path="quizplaces" element={<QuizPlaces/>}/>
+                        <Route path="quiz/places" element={<QuizPlaces/>}/>
                         <Route path="learnfood" element={<LearnFood/>}/>
                         <Route path="learnclothes" element={<LearnClothes/>}/>
                         <Route path="*" element={<Error/>}/>
@@ -138,6 +138,9 @@ function App() {
                         <Route path="quizpage" element={<QuizPage/>}/>
                         <Route path="/quiz/food" element={<QuizPage topic="food" />} />
                         <Route path="/quiz/clothes" element={<QuizPage topic="clothes" />} />
+                        <Route path="/quiz/places/penang" element={<QuizPage topic="penang" />} />
+                        <Route path="/quiz/places/perlis" element={<QuizPage topic="perlis" />} />
+                        <Route path="/quiz/places/sarawak" element={<QuizPage topic="sarawak" />} />
                     </Route>
                 </Routes>
         </Container>
