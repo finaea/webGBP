@@ -59,7 +59,7 @@ const Food1 = () => {
             document.addEventListener('mousedown', handleClickOutside);
             return () => document.removeEventListener('mousedown', handleClickOutside);
         }
-    }, [showPopup]);
+    }, [handleClickOutside], [showPopup]);
 
     return (
         <div className="container">

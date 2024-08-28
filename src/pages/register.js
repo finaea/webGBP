@@ -1,45 +1,68 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/login.css';
 import { useNavigate } from 'react-router-dom';
+import { registerUser } from '../database'; // Import the registerUser function
 
-const Login = () => {
+const Register = () => {
     const navigate = useNavigate();
+    const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
-  return (
-    <div className="container">
-      <div className="heading">Create an account</div>
-      <form action="" className="form">
-        <input
-          required
-          className="input"
-          type="name"
-          name="name"
-          id="name"
-          placeholder="Name"
-        />
-        <input
-          required
-          className="input"
-          type="email"
-          name="email"
-          id="email"
-          placeholder="E-mail"
-        />
-        <input
-          required
-          className="input"
-          type="password"
-          name="password"
-          id="password"
-          placeholder="Password"
-        />
-        <span className="forgot-password"> Already have an account?     
-        <a href="/login">Login</a>
-        </span>
-        <input className="login-button" onClick={() => navigate('/verification')} type="submit" value="Register" />
-      </form>
-    </div>
-  );
+    const handleRegister = async (e) => {
+        e.preventDefault();
+        const { success, error } = await registerUser(username, email, password);
+
+        if (success) {
+            window.alert('Registration successful! Please check your email for verification.');
+            navigate('/verification'); // Navigate to verification page after registration
+        } else {
+            window.alert('Registration failed: ' + error);
+        }
+    };
+
+    return (
+        <div className="container">
+            <div className="heading">Create an account</div>
+            <form className="form" onSubmit={handleRegister}>
+                <input
+                    required
+                    className="input"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Name"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                />
+                <input
+                    required
+                    className="input"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="E-mail"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                />
+                <input
+                    required
+                    className="input"
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                />
+                <span className="forgot-password">
+                    Already have an account?
+                    <a href="/login">Login</a>
+                </span>
+                <input className="login-button" type="submit" value="Register"/>
+            </form>
+        </div>
+    );
 };
 
-export default Login;
+export default Register;
