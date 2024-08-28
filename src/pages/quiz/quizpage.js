@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import '../../styles/quiz.css';
 import { useNavigate } from 'react-router-dom';
 import IconButton from '@mui/material/IconButton';
