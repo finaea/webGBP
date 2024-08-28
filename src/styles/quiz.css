@@ -5,7 +5,7 @@
     background: linear-gradient(45deg, #311354 0%, #422a65 100%);
     color: white;
     padding-block: 20px;
-    margin: 20px auto;
+    margin: 10px auto;
     border-radius: 20px;
     border: none;
     transition: all 0.2s ease-in-out;
@@ -35,7 +35,7 @@
     border-radius: 20px;
     text-align: center;
     position: relative;
-    overflow-y: auto; /*for scrolling*/
+    overflow-y: auto;
     border: 5px solid transparent;
 }
 

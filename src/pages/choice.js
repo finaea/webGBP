@@ -9,10 +9,10 @@ const Choice = () => {
         <div className="container">
           <div className="heading">Choose One Below</div>
           <form action="" className="form">
-            <input className="button" onClick={() => navigate('/learntopics')} type="submit" value="Learn" />
+            <input className="button" onClick={() => navigate('/learn')} type="submit" value="Learn" />
           </form>
           <form action="" className="form">
-            <input className="button" onClick={() => navigate('/quiztopics')} type="submit" value="Quiz" />
+            <input className="button" onClick={() => navigate('/quiz')} type="submit" value="Quiz" />
           </form>
         </div>
       );

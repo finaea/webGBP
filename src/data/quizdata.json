@@ -26,49 +26,49 @@
       "image": "nasi_lemak.jpg",
       "answer_choices": ["Soy sauce", "Fish sauce", "Chili paste", "Coconut milk"],
       "correct_answer": "Coconut milk",
-      "description": ""
+      "description": "Coconut milk is the main ingredient in Nasi Lemak, a traditional Malaysian dish. The rice is cooked in coconut milk, giving it a rich, creamy flavor that is essential to this iconic meal."
     },
     {
       "question": "Which dish is known as a traditional Malay grilled fish?",
       "image": "ikan_bakar.jpg",
       "answer_choices": ["Ikan Bakar", "Ayam Goreng", "Sambal Udang", "Kari Ayam"],
       "correct_answer": "Ikan Bakar",
-      "description": ""
+      "description": "Ikan Bakar is a traditional Malay dish of grilled fish, typically marinated with a mixture of spices and then wrapped in banana leaves before being grilled. It is a popular dish throughout Malaysia, known for its smoky, spicy flavors."
     },
     {
       "question": "What type of noodles is used in 'Char Kuey Teow'?",
       "image": "char_kuey_teow.jpg",
       "answer_choices": ["Vermicelli", "Egg noodles", "Flat rice noodles", "Glass noodles"],
       "correct_answer": "Flat rice noodles",
-      "description": ""
+      "description": "Char Kuey Teow is made using flat rice noodles, which are stir-fried with a mixture of soy sauce, shrimp, eggs, Chinese sausage, and other ingredients. This dish is a beloved street food in Malaysia, known for its smoky flavor from being cooked over high heat."
     },
     {
       "question": "Which of these is a traditional Malaysian breakfast dish?",
       "image": "roti_canai.jpg",
       "answer_choices": ["Roti Canai", "Nasi Lemak", "Nasi Kerabu", "Mee Rebus"],
       "correct_answer": "Roti Canai",
-      "description": ""
+      "description": "Roti Canai is a traditional Malaysian breakfast dish made from flatbread that is crispy on the outside and soft on the inside. It is usually served with dhal (lentil curry) or other types of curry."
     },
     {
       "question": "What is the key ingredient in 'Asam Pedas'?",
       "image": "asam_pedas.jpg",
       "answer_choices": ["Coconut milk", "Soy sauce", "Tamarind", "Palm sugar"],
       "correct_answer": "Tamarind",
-      "description": ""
+      "description": "Tamarind is the key ingredient in Asam Pedas, a popular Malaysian dish known for its sour and spicy flavor. The tamarind gives the dish its distinctive tangy taste, which is balanced with spices and usually served with fish."
     },
     {
       "question": "Which dish is made from fermented vegetables and is a popular side dish in Malaysia?",
       "image": "acar.jpg",
       "answer_choices": ["Kimchi", "Acar", "Pickles", "Sambal"],
       "correct_answer": "Acar",
-      "description": ""
+      "description": "Acar is a traditional Malaysian side dish made from fermented vegetables, typically including cucumbers, carrots, and cabbage. It is flavored with vinegar, spices, and occasionally peanuts, offering a tangy, crunchy complement to main dishes."
     },
     {
       "question": "Which Malaysian dish is a spicy noodle soup with a coconut milk base?",
       "image": "laksa.jpg",
       "answer_choices": ["Laksa", "Mee Goreng", "Hokkien Mee", "Tom Yam"],
       "correct_answer": "Laksa",
-      "description": ""
+      "description": "Laksa is a spicy noodle soup that is one of Malaysia's most famous dishes. The broth is made with a coconut milk base, which provides a creamy texture and balances the spiciness of the dish. It is often garnished with ingredients like prawns, chicken, and tofu."
     }
   ],
   "clothes": [
@@ -132,7 +132,7 @@
     },
     {
       "question": "What is Penang Bridge known for?",
-      "image": "",
+      "image": "penang_bridge.jpg",
       "answer_choices": ["Having a glass-bottomed section", "Being the oldest bridge in Malaysia", "Being one of the longest bridges in Southeast Asia", "Connecting Malaysia to Singapore"],
       "correct_answer": "Being one of the longest bridges in Southeast Asia",
       "description": "Penang Bridge is one of the longest bridges in Southeast Asia, spanning 13.5 kilometers. It connects the island of Penang to the mainland, playing a crucial role in transportation and economic development."
@@ -147,10 +147,10 @@
   ],
   "perlis": [
     {
-      "question": "Which of these is the flag for Perlis state?",
+      "question": "What flag is this?",
       "image": "flag_perlis.jpg",
-      "answer_choices": ["flag_ukraine.jpg", "flag_perlis.jpg", "flag_buryatia.jpg", "flag_rwanda.jpg"],
-      "correct_answer": "flag_perlis.jpg",
+      "answer_choices": ["Ukraine", "Perlis", "Buryatia", "Rwanda"],
+      "correct_answer": "Perlis",
       "description": "The Perlis state flag consists of two horizontal bands of yellow and blue, representing the royalty and people of Perlis. It is a symbol of the state's sovereignty and heritage."
     },
     {

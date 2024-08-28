@@ -1,19 +1,18 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import '../styles/quiz.css';  // Ensure correct path to your CSS file
+import '../styles/quiz.css'; 
 import CheckIcon from '@mui/icons-material/Check';
 import CloseIcon from '@mui/icons-material/Close';
 
 const Summary = () => {
     const navigate = useNavigate();
     const location = useLocation();
-    const { selectedAnswers, points, totalQuestions } = location.state;  // Retrieve passed state
+    const { selectedAnswers, points, totalQuestions } = location.state; 
 
-    // Calculate the number of correct answers
     const correctAnswersCount = Object.values(selectedAnswers).filter(answer => answer.isCorrect).length;
 
     const handleBackButtonClick = () => {
-        navigate('/quiztopics');  // Adjust this to go back to the start or wherever you want
+        navigate('/quiz'); 
     };
 
     return (
