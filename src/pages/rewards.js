@@ -17,7 +17,7 @@ const RewardsPage = () => {
 
     return (
         <div className="rewards-page-container">
-            <h1 className="heading">Rewards Page</h1>
+            <h1 className="heading2">Rewards Page</h1>
             <div className="points-display">You have {points} points</div>
 
             <div className="vouchers-list">

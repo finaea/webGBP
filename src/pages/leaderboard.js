@@ -14,7 +14,7 @@ function Leaderboard() {
 
     return (
         <div className="leaderboard-container">
-            <h1 className="heading">Leaderboard</h1>
+            <h1 className="heading5">Leaderboard</h1>
             <table className="leaderboard-table">
                 <thead>
                     <tr>
