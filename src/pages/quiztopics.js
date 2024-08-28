@@ -15,7 +15,7 @@ const QuizTopics = () => {
             <input className="button" onClick={() => navigate('/food1')} type="submit" value="Food" />
           </form>
           <form action="" className="form">
-            <input className="button" onClick={() => navigate('/quizclothes')} type="submit" value="Clothes" />
+            <input className="button" onClick={() => navigate('/clothes1')} type="submit" value="Clothes" />
           </form>
         </div>
       );
