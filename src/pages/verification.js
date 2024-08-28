@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect} from 'react';
 import '../styles/login.css';
 import { useNavigate } from 'react-router-dom';
 import { getAuth, sendEmailVerification } from 'firebase/auth';
@@ -9,28 +9,16 @@ const Verification = () => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
 
-    useEffect(() => {
-        const checkUserStatus = async () => {
-            const user = auth.currentUser;
-            if (user) {
-                // User is logged in, so the verification page should not be accessible
-                window.alert('This page is not accessible while you are logged in.');
-                navigate('/menu'); // Redirect to /menu or another appropriate page
-            }
-        };
-
-        checkUserStatus();
-    }, [auth, navigate]);
 
     const handleVerificationCheck = async (e) => {
         e.preventDefault();
         setLoading(true);
         setError('');
-
+        
         try {
             const user = auth.currentUser;
             await user.reload();
-
+            
             if (user.emailVerified) {
                 window.alert('Email verified successfully!');
                 navigate('/login'); // Navigate to login page after successful verification
