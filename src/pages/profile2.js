@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Stack, TextField, IconButton, Dialog, DialogActions, DialogContent, DialogTitle, Typography } from '@mui/material';
 import EditNoteIcon from '@mui/icons-material/EditNote';
-import { getAuth, updatePassword, verifyBeforeUpdateEmail, reauthenticateWithCredential, EmailAuthProvider, sendPasswordResetEmail } from 'firebase/auth';
+import { useNavigate } from 'react-router-dom';
+import { getAuth, updatePassword, verifyBeforeUpdateEmail, sendEmailVerification, reauthenticateWithCredential, EmailAuthProvider, sendPasswordResetEmail } from 'firebase/auth';
 import { getFirestore, doc, updateDoc, getDoc } from 'firebase/firestore';
 import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import withAuth from '../utils/withAuth';
 import '../styles/common.css';
 
-function Profile() {
+function Profile2() {
     const [isEditingName, setIsEditingName] = useState(false);
     const [isEditingEmail, setIsEditingEmail] = useState(false);
     const [isEditingPoints, setIsEditingPoints] = useState(false);
@@ -25,6 +26,7 @@ function Profile() {
     const [email, setEmail] = useState('');
     const [points, setPoints] = useState(0);
 
+    const navigate = useNavigate();
     const auth = getAuth();
     const db = getFirestore();
     const storage = getStorage();
@@ -69,33 +71,8 @@ function Profile() {
         setIsEditingName(false);
     };
 
-    async function reauthenticateUntilSuccess(user, email, password) {
-        const credential = EmailAuthProvider.credential(email, password);
-        const maxRetries = 6; // Set a limit to prevent infinite loops
-        let attempt = 0;
-      
-        while (attempt < maxRetries) {
-          try {
-            await reauthenticateWithCredential(user, credential);
-            alert('Verification successful');
-            return; // Exit the function if reauthentication is successful
-          } catch (error) {
-            alert('Press OK when you have verified!')
-      
-            // Increment attempt counter
-            attempt++;
-            
-            // Optionally, wait before retrying to avoid rapid requests
-            await new Promise(resolve => setTimeout(resolve, 1000));
-          }
-        }
-      
-        console.error('Reauthentication failed after maximum retries');
-      }
-
     const handleSaveEmail = async () => {
-
-        if (user.email !== email) {
+        if (user.email != email) {
             try {
                 // Update email in Firebase Authentication
                 await verifyBeforeUpdateEmail(user, email);
@@ -103,8 +80,10 @@ function Profile() {
 
                 alert('A verification email has been sent to your new email address. Please verify to complete the email change.');
                 setIsEditingEmail(false);
+
+                const credential = EmailAuthProvider.credential(email, "password123");
+                await reauthenticateWithCredential(user, credential);
                 
-                reauthenticateUntilSuccess(user, email, "12345678")
                 // Update email in Firestore
                 await updateDoc(doc(db, 'users', user.uid), { email });
 
@@ -336,4 +315,4 @@ function Profile() {
     );
 }
 
-export default withAuth(Profile);
+export default withAuth(Profile2);

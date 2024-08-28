@@ -1,5 +1,6 @@
 import React from 'react';
-import {BrowserRouter, Routes, Route, Navigate, useNavigate, useLocation} from "react-router-dom";
+
+import {Routes, Route, useNavigate, useLocation} from "react-router-dom";
 import Home from "./pages/home.js";
 import Login from "./pages/login.js";
 import ForgotPassword from "./pages/forgotpassword.js"
