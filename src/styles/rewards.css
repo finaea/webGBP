@@ -1,0 +1,65 @@
+.rewards-page-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.heading {
+    font-size: 24px;
+    color: #311354;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.points-display {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.vouchers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.voucher-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 250px;
+    text-align: center;
+}
+
+.voucher-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.voucher-info {
+    margin-top: 10px;
+}
+
+.voucher-info span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.voucher-info button {
+    background-color: #311354;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.voucher-info button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}

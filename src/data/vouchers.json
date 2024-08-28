@@ -1,0 +1,53 @@
+{
+    "vouchers": [
+      {
+        "name": "Fort Cornwallis Entry Ticket",
+        "description": "Get a 20% discount on the entry ticket to Fort Cornwallis in Penang.",
+        "points_cost": 50,
+        "image": "fort_cornwallis.jpg"
+      },
+      {
+        "name": "Kek Lok Si Temple Entry",
+        "description": "Get a free entry pass to Kek Lok Si Temple in Penang.",
+        "points_cost": 100,
+        "image": "kek_lok_si.jpg"
+      },
+      {
+        "name": "Ikan Bakar Restaurant Voucher",
+        "description": "Enjoy a meal at a famous Ikan Bakar restaurant with a RM10 discount.",
+        "points_cost": 30,
+        "image": "ikan_bakar.jpg"
+      },
+      {
+        "name": "Laksa Restaurant Voucher",
+        "description": "Redeem this voucher for a free bowl of Laksa at selected restaurants.",
+        "points_cost": 40,
+        "image": "laksa.jpg"
+      },
+      {
+        "name": "Roti Canai Breakfast Voucher",
+        "description": "Redeem this voucher for a free Roti Canai breakfast at selected outlets.",
+        "points_cost": 20,
+        "image": "roti_canai.jpg"
+      },
+      {
+        "name": "Gua Kelam Cave Entry",
+        "description": "Get a 30% discount on the entry ticket to Gua Kelam cave in Perlis.",
+        "points_cost": 60,
+        "image": "gua_kelam.jpg"
+      },
+      {
+        "name": "Penang Hill Train Ride",
+        "description": "Get a free return train ride to Penang Hill.",
+        "points_cost": 70,
+        "image": "penang_hill.jpg"
+      },
+      {
+        "name": "Baju Kurung Tailoring Voucher",
+        "description": "RM15 off on custom Baju Kurung tailoring.",
+        "points_cost": 50,
+        "image": "baju_kurung.jpg"
+      }
+    ]
+  }
+  

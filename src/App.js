@@ -19,10 +19,7 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import Leaderboard from "./pages/leaderboard.js";
 import QuizPage from "./pages/quiz/quizpage.js";
 import LearnPage from './pages/learn/learnpage.js';
-
-// Inside your routes
-<Route path="/learn/:topic" element={<LearnPage />} />
-
+import RewardsPage from './pages/rewards.js';
 
 function BackButton() {
     const navigate = useNavigate();
@@ -48,7 +45,7 @@ function BackButton() {
 
 function App() {
     const location = useLocation();
-    const showBackButton = !['/', '/home', '/menu', '/quiz/food', '/quiz/clothes', '/quiz/places/penang', '/quiz/places/perlis'].includes(location.pathname);
+    const showBackButton = !['/', '/home', '/menu', '/quiz/food', '/quiz/clothes', '/quiz/places/penang', '/quiz/places/perlis', '/quiz/places/sarawak'].includes(location.pathname);
     return (
         <Container>
             {showBackButton && <BackButton />}
@@ -77,6 +74,7 @@ function App() {
                         <Route path="/quiz/places/perlis" element={<QuizPage topic="perlis" />} />
                         <Route path="/quiz/places/sarawak" element={<QuizPage topic="sarawak" />} />
                         <Route path="/learn/:topic" element={<LearnPage />} />
+                        <Route path="/rewards" element={<RewardsPage />} />
                     </Route>
                 </Routes>
         </Container>
