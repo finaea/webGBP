@@ -4,7 +4,7 @@ import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase
 
 // Your Firebase configuration
 const firebaseConfig = {
-
+  
 };
 
 // Initialize Firebase

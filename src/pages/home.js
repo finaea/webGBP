@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <div className="container">
-      <div className="heading">Quiz App</div>
+      <div className="heading3"> Green Quiz App</div>
       <form action="" className="form">
         <input className="button" onClick={() => navigate('/login')} type="submit" value="Log In" />
       </form>

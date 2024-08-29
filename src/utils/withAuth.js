@@ -15,7 +15,7 @@ const withAuth = (WrappedComponent) => {
                     setIsAuthenticated(true);
                 } else {
                     setIsAuthenticated(false);
-                    navigate('/login'); // Redirect to login if not authenticated
+                    navigate('/home'); // Redirect to login if not authenticated
                 }
             });
 
