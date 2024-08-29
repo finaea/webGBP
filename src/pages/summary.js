@@ -13,7 +13,7 @@ const Summary = () => {
     const correctAnswersCount = Object.values(selectedAnswers).filter(answer => answer.isCorrect).length;
 
     const handleBackButtonClick = () => {
-        navigate('/quiz'); 
+        navigate('/menu');
     };
 
     return (
@@ -28,7 +28,7 @@ const Summary = () => {
                 <div className="summary-table">
                     {Object.entries(selectedAnswers).map(([questionNumber, answerDetail], index) => (
                         <div key={index} className="summary-row">
-                            <div className="question-number">Question {questionNumber}</div>
+                            <div className="question-number">{questionNumber}</div>
                             <div className="result-icon">
                                 {answerDetail.isCorrect ? <CheckIcon color="success" /> : <CloseIcon color="error" />}
                             </div>

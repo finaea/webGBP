@@ -196,7 +196,7 @@ function Profile() {
     };
 
     return (
-        <div className="container">
+        <div className="container2">
             <Stack spacing={2}>
                 <div style={{ width: '100%', textAlign: 'center' }}>
                     <IconButton onClick={() => document.getElementById('profile-image-input').click()}>

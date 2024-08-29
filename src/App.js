@@ -46,10 +46,10 @@ function BackButton() {
 
 function App() {
     const location = useLocation();
-    const showBackButton = !['/', '/home', '/menu', '/quiz/food', '/quiz/clothes', '/quiz/places/penang', '/quiz/places/perlis', '/quiz/places/sarawak'].includes(location.pathname);
+    const dontShowBackButton = !['/', '/home', '/menu', '/quiz/food', '/quiz/clothes', '/quiz/places/penang', '/quiz/places/perlis', '/quiz/places/sarawak'].includes(location.pathname);
     return (
         <Container>
-            {showBackButton && <BackButton />}
+            {dontShowBackButton && <BackButton />}
                 <Routes>
                     <Route path="/">
                         <Route path="" element={<Home/>}/>
