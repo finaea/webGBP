@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import '../styles/login.css';
 import { useNavigate } from 'react-router-dom';
 import { sendPasswordResetEmail } from 'firebase/auth';
-import withNoAuth from '../utils/withNoAuth';
 import { auth } from '../database'; // Import auth from database.js
 
 const PasswordReset = () => {
@@ -53,4 +52,4 @@ const PasswordReset = () => {
     );
 };
 
-export default withNoAuth(PasswordReset);
+export default PasswordReset;

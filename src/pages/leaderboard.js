@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/leaderboard.css';
+import withAuth from '../utils/withAuth';
 
 function Leaderboard() {
     const currentUser = 'Charlie'; // Replace this with the actual logged-in user's name or ID
@@ -40,4 +41,4 @@ function Leaderboard() {
     );
 }
 
-export default Leaderboard;
+export default withAuth(Leaderboard);

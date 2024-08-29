@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import IconButton from '@mui/material/IconButton';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import QuizData from '../../data/quizdata.json';
+import withAuth from '../../utils/withAuth';
 
 const QuizPage = ({ topic }) => {
     const navigate = useNavigate();
@@ -18,7 +19,7 @@ const QuizPage = ({ topic }) => {
     const handleBackButtonClick = () => {
         const confirmLeave = window.confirm('Are you sure you want to leave during the quiz? Your progress will not be saved.');
         if (confirmLeave) {
-            navigate('/login');
+            navigate('/menu');
         }
     };
 
@@ -87,4 +88,4 @@ const QuizPage = ({ topic }) => {
     );
 };
 
-export default QuizPage;
+export default withAuth(QuizPage);

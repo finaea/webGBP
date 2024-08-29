@@ -2,6 +2,7 @@ import React from 'react';
 import QuizData from '../../data/quizdata.json';
 import '../../styles/learn.css';
 import { useParams } from 'react-router-dom';
+import withAuth from '../../utils/withAuth';
 
 const LearnPage = () => {
     const { topic } = useParams();
@@ -31,4 +32,4 @@ const LearnPage = () => {
     );
 };
 
-export default LearnPage;
+export default withAuth(LearnPage);

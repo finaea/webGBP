@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import VouchersData from '../data/vouchers.json'; 
 import '../styles/rewards.css'
+import withAuth from '../utils/withAuth';
 
 const RewardsPage = () => {
     const [points, setPoints] = useState(200); 
@@ -46,4 +47,4 @@ const RewardsPage = () => {
     );
 };
 
-export default RewardsPage;
+export default withAuth(RewardsPage);

@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../styles/login.css';
 import { useNavigate } from 'react-router-dom';
+import withAuth from '../../utils/withAuth';
 
 const LearnPlaces = () => {
     const navigate = useNavigate();
@@ -22,4 +23,4 @@ const LearnPlaces = () => {
 
 };
 
-export default LearnPlaces;
+export default withAuth(LearnPlaces);

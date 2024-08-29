@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import '../styles/quiz.css'; 
 import CheckIcon from '@mui/icons-material/Check';
 import CloseIcon from '@mui/icons-material/Close';
+import withAuth from '../utils/withAuth';
 
 const Summary = () => {
     const navigate = useNavigate();
@@ -40,4 +41,4 @@ const Summary = () => {
     );
 };
 
-export default Summary;
+export default withAuth(Summary);
