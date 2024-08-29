@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/login.css';
 import { useNavigate } from 'react-router-dom';
+import withAuth from '../utils/withAuth';
 
 const QuizTopics = () => {
     const navigate = useNavigate();
@@ -22,4 +23,4 @@ const QuizTopics = () => {
 
 };
 
-export default QuizTopics;
+export default withAuth(QuizTopics);
