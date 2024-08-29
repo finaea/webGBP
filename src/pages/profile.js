@@ -100,7 +100,6 @@ function Profile() {
                 // Update email in Firebase Authentication
                 await verifyBeforeUpdateEmail(user, email);
 
-
                 alert('A verification email has been sent to your new email address. Please verify to complete the email change.');
                 setIsEditingEmail(false);
                 
